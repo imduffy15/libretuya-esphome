@@ -598,7 +598,7 @@ esp32_camera_web_server:
     mode: snapshot
 
 external_components:
-  - source: github://esphome/esphome@dev
+  - source: github://imduffy15/libretuya-esphome@dev
     refresh: 1d
     components: [bh1750]
   - source: ../esphome/components

@@ -60,7 +60,7 @@ setup(
     project_urls={
         "Bug Tracker": "https://github.com/esphome/issues/issues",
         "Feature Request Tracker": "https://github.com/esphome/feature-requests/issues",
-        "Source Code": "https://github.com/esphome/esphome",
+        "Source Code": "https://github.com/imduffy15/libretuya-esphome",
         "Documentation": "https://esphome.io",
         "Twitter": "https://twitter.com/esphome_",
     },

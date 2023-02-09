@@ -48,4 +48,4 @@ jobs:
           stale-issue-label: "stale"
           exempt-issue-labels: "not-stale"
           stale-issue-message: >
-            https://github.com/esphome/esphome/issues/430
+            https://github.com/imduffy15/libretuya-esphome/issues/430
