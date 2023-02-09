@@ -19,15 +19,15 @@ RUN \
     apt-get update \
     # Use pinned versions so that we get updates with build caching
     && apt-get install -y --no-install-recommends \
-        python3=3.9.2-3 \
-        python3-pip=20.3.4-4+deb11u1 \
-        python3-setuptools=52.0.0-4 \
-        python3-pil=8.1.2+dfsg-0.3+deb11u1 \
-        python3-cryptography=3.3.2-1 \
-        iputils-ping=3:20210202-1 \
-        git=1:2.30.2-1 \
-        curl=7.74.0-1.3+deb11u3 \
-        openssh-client=1:8.4p1-5+deb11u1 \
+        python3 \
+        python3-pip \
+        python3-setuptools \
+        python3-pil \
+        python3-cryptography \
+        iputils-ping \
+        git \
+        curl \
+        openssh-client \
     && rm -rf \
         /tmp/* \
         /var/{cache,log}/* \
@@ -50,8 +50,8 @@ RUN \
 RUN \
     # Ubuntu python3-pip is missing wheel
     pip3 install --no-cache-dir \
-        wheel==0.37.1 \
-        platformio==6.1.5 \
+        wheel \
+        platformio \
     # Change some platformio settings
     && platformio settings set enable_telemetry No \
     && platformio settings set check_platformio_interval 1000000 \
@@ -99,7 +99,7 @@ RUN \
     apt-get update \
     # Use pinned versions so that we get updates with build caching
     && apt-get install -y --no-install-recommends \
-        nginx-light=1.18.0-6.1+deb11u3 \
+        nginx-light \
     && rm -rf \
         /tmp/* \
         /var/{cache,log}/* \
@@ -135,13 +135,13 @@ RUN \
     apt-get update \
     # Use pinned versions so that we get updates with build caching
     && apt-get install -y --no-install-recommends \
-        clang-format-11=1:11.0.1-2 \
-        clang-tidy-11=1:11.0.1-2 \
-        patch=2.7.6-7 \
-        software-properties-common=0.96.20.2-2.1 \
-        nano=5.4-2+deb11u2 \
-        build-essential=12.9 \
-        python3-dev=3.9.2-3 \
+        clang-format-11 \
+        clang-tidy-11 \
+        patch \
+        software-properties-common \
+        nano \
+        build-essential \
+        python3-dev \
     && rm -rf \
         /tmp/* \
         /var/{cache,log}/* \
