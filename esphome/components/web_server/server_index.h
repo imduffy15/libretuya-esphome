@@ -1,5 +1,5 @@
 #pragma once
-// Generated from https://github.com/esphome/esphome-webserver
+// Generated from https://github.com/imduffy15/libretuya-esphome-webserver
 #include "esphome/core/hal.h"
 namespace esphome {
 

@@ -57,7 +57,7 @@ def validate_source_shorthand(value):
     if m.group(4):
         conf = {
             CONF_TYPE: TYPE_GIT,
-            CONF_URL: "https://github.com/esphome/esphome.git",
+            CONF_URL: "https://github.com/imduffy15/libretuya-esphome.git",
             CONF_REF: f"pull/{m.group(4)}/head",
         }
     else:
